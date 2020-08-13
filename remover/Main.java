@@ -5,6 +5,15 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void removeOggy(ArrayList<String> names) {
+         String subString = "oggy";
+			for(int i=names.size()-1; i>=0; i--)
+			{
+			   if(names.get(i).contains(subString))
+			   {
+			
+			       names.remove(i);
+			   }
+			}
         return;
     }
     public static boolean oggyIsRemoved(ArrayList<String> names) {
